@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{979D77FF-0898-482E-A20A-FA83FF8840E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineBankingWebApplication</RootNamespace>
+    <AssemblyName>OnlineBankingWebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminSide\assets\css\bootstrap.css" />
+    <Content Include="AdminSide\assets\css\custom.css" />
+    <Content Include="AdminSide\assets\css\font-awesome.css" />
+    <Content Include="AdminSide\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="AdminSide\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminSide\assets\images\logo.png" />
+    <Content Include="AdminSide\assets\images\Logo_img.JPG" />
+    <Content Include="AdminSide\assets\images\logo_transprant.png" />
+    <Content Include="AdminSide\assets\js\bootstrap.min.js" />
+    <Content Include="AdminSide\assets\js\custom.js" />
+    <Content Include="AdminSide\assets\js\jquery-1.10.2.js" />
+    <Content Include="AdminSide\EditCustomerComplaints.aspx" />
+    <Content Include="AdminSide\ManageComplaints.aspx" />
+    <Content Include="AdminSide\EditCustomerTransaction.aspx" />
+    <Content Include="AdminSide\Login.aspx" />
+    <Content Include="AdminSide\ManageAccounts.aspx" />
+    <Content Include="AdminSide\Profile.aspx" />
+    <Content Include="AdminSide\Registration.aspx" />
+    <Content Include="App_Data\OnlineBanking.mdf" />
+    <Content Include="App_Data\OnlineBanking_log.ldf">
+      <DependentUpon>OnlineBanking.mdf</DependentUpon>
+    </Content>
+    <Content Include="CustomerSide\CheckComplaintsStatus.aspx" />
+    <Content Include="CustomerSide\ChangePassword.aspx" />
+    <Content Include="CustomerSide\Complaints.aspx" />
+    <Content Include="CustomerSide\css\font-awesom-min.css" />
+    <Content Include="CustomerSide\EditCustomer_Profile.aspx" />
+    <Content Include="CustomerSide\css\!!camera.css" />
+    <Content Include="CustomerSide\css\animate.css" />
+    <Content Include="CustomerSide\css\camera.css" />
+    <Content Include="CustomerSide\css\contact-form.css" />
+    <Content Include="CustomerSide\css\grid.css" />
+    <Content Include="CustomerSide\css\ie.css" />
+    <Content Include="CustomerSide\css\owl.carousel.css" />
+    <Content Include="CustomerSide\css\style.css" />
+    <Content Include="CustomerSide\css\touchTouch.css" />
+    <Content Include="CustomerSide\CustomerLogin.aspx" />
+    <Content Include="CustomerSide\CustomerRegistration.aspx" />
+    <Content Include="CustomerSide\Cust_Profile.aspx" />
+    <Content Include="CustomerSide\Home.aspx" />
+    <Content Include="CustomerSide\images\arrows.png" />
+    <Content Include="CustomerSide\images\arrows_for_ie.png" />
+    <Content Include="CustomerSide\images\camera-loader.gif" />
+    <Content Include="CustomerSide\images\favicon.ico" />
+    <Content Include="CustomerSide\images\footer-logo.png" />
+    <Content Include="CustomerSide\images\form-loader.gif" />
+    <Content Include="CustomerSide\images\index-1_img-1.jpg" />
+    <Content Include="CustomerSide\images\index-1_img-2.jpg" />
+    <Content Include="CustomerSide\images\index-1_img-3.jpg" />
+    <Content Include="CustomerSide\images\index-1_img-4.jpg" />
+    <Content Include="CustomerSide\images\index-1_img-5.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-1-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-1.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-2-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-2.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-3-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-3.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-4-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-4.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-5-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-5.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-6-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-6.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-7-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-7.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-8-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-8.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-9-big.jpg" />
+    <Content Include="CustomerSide\images\index-2_img-9.jpg" />
+    <Content Include="CustomerSide\images\index-3_img-1.jpg" />
+    <Content Include="CustomerSide\images\index-3_img-2.jpg" />
+    <Content Include="CustomerSide\images\index-3_img-3.jpg" />
+    <Content Include="CustomerSide\images\index-3_img-4.jpg" />
+    <Content Include="CustomerSide\images\index-3_img-5.jpg" />
+    <Content Include="CustomerSide\images\index_img-1.jpg" />
+    <Content Include="CustomerSide\images\index_img-2.jpg" />
+    <Content Include="CustomerSide\images\index_img-3.jpg" />
+    <Content Include="CustomerSide\images\index_img_par.jpg" />
+    <Content Include="CustomerSide\images\index_img_slider-1.jpg" />
+    <Content Include="CustomerSide\images\logo.png" />
+    <Content Include="CustomerSide\images\logo_transprant.png" />
+    <Content Include="CustomerSide\images\preloader.gif" />
+    <Content Include="CustomerSide\images\quotes.jpg" />
+    <Content Include="CustomerSide\images\quotes.png" />
+    <Content Include="CustomerSide\images\slider_img3.jpg" />
+    <Content Include="CustomerSide\index-1.html" />
+    <Content Include="CustomerSide\index-3.html" />
+    <Content Include="CustomerSide\index-4.html" />
+    <Content Include="CustomerSide\js\camera.js" />
+    <Content Include="CustomerSide\js\device.min.js" />
+    <Content Include="CustomerSide\js\Googlemap.js" />
+    <Content Include="CustomerSide\js\html5shiv.js" />
+    <Content Include="CustomerSide\js\jquery-migrate-1.2.1.js" />
+    <Content Include="CustomerSide\js\jquery.cookie.js" />
+    <Content Include="CustomerSide\js\jquery.easing.1.3.js" />
+    <Content Include="CustomerSide\js\jquery.equalheights.js" />
+    <Content Include="CustomerSide\js\jquery.js" />
+    <Content Include="CustomerSide\js\jquery.mobile.customized.min.js" />
+    <Content Include="CustomerSide\js\jquery.mobilemenu.js" />
+    <Content Include="CustomerSide\js\jquery.mousewheel.min.js" />
+    <Content Include="CustomerSide\js\jquery.simplr.smoothscroll.min.js" />
+    <Content Include="CustomerSide\js\jquery.stellar.js" />
+    <Content Include="CustomerSide\js\jquery.ui.totop.js" />
+    <Content Include="CustomerSide\js\modal.js" />
+    <Content Include="CustomerSide\js\owl.carousel.js" />
+    <Content Include="CustomerSide\js\PIE.htc" />
+    <Content Include="CustomerSide\js\script.js" />
+    <Content Include="CustomerSide\js\superfish.js" />
+    <Content Include="CustomerSide\js\TMForm.js" />
+    <Content Include="CustomerSide\js\tmstickup.js" />
+    <Content Include="CustomerSide\js\touchTouch.jquery.js" />
+    <Content Include="CustomerSide\js\wow.js" />
+    <Content Include="CustomerSide\Logout.aspx" />
+    <Content Include="CustomerSide\TransferMoney.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSide\Admin_Customer.cs" />
+    <Compile Include="AdminSide\EditCustomerComplaints.aspx.cs">
+      <DependentUpon>EditCustomerComplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\EditCustomerComplaints.aspx.designer.cs">
+      <DependentUpon>EditCustomerComplaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\ManageComplaints.aspx.cs">
+      <DependentUpon>ManageComplaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\ManageComplaints.aspx.designer.cs">
+      <DependentUpon>ManageComplaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\EditCustomerTransaction.aspx.cs">
+      <DependentUpon>EditCustomerTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\EditCustomerTransaction.aspx.designer.cs">
+      <DependentUpon>EditCustomerTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\ManageAccounts.aspx.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\ManageAccounts.aspx.designer.cs">
+      <DependentUpon>ManageAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\OnlineBanking.Master.cs">
+      <DependentUpon>OnlineBanking.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\OnlineBanking.Master.designer.cs">
+      <DependentUpon>OnlineBanking.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSide\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSide\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\CheckComplaintsStatus.aspx.cs">
+      <DependentUpon>CheckComplaintsStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\CheckComplaintsStatus.aspx.designer.cs">
+      <DependentUpon>CheckComplaintsStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\Complaints.aspx.cs">
+      <DependentUpon>Complaints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\Complaints.aspx.designer.cs">
+      <DependentUpon>Complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\EditCustomer_Profile.aspx.cs">
+      <DependentUpon>EditCustomer_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\EditCustomer_Profile.aspx.designer.cs">
+      <DependentUpon>EditCustomer_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\CustomerLogin.aspx.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\CustomerLogin.aspx.designer.cs">
+      <DependentUpon>CustomerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\CustomerRegistration.aspx.cs">
+      <DependentUpon>CustomerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\CustomerRegistration.aspx.designer.cs">
+      <DependentUpon>CustomerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\Cust_Profile.aspx.cs">
+      <DependentUpon>Cust_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\Cust_Profile.aspx.designer.cs">
+      <DependentUpon>Cust_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\OnlineBanking_Customer.Master.cs">
+      <DependentUpon>OnlineBanking_Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\OnlineBanking_Customer.Master.designer.cs">
+      <DependentUpon>OnlineBanking_Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\TransferMoney.aspx.cs">
+      <DependentUpon>TransferMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSide\TransferMoney.aspx.designer.cs">
+      <DependentUpon>TransferMoney.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSide\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminSide\OnlineBanking.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdminSide\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="AdminSide\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="AdminSide\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="AdminSide\assets\fonts\FontAwesome.otf" />
+    <None Include="AdminSide\assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="AdminSide\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="AdminSide\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="AdminSide\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="CustomerSide\js\PIE.php" />
+    <None Include="CustomerSide\less\grid.less" />
+    <None Include="CustomerSide\less\mixins.less" />
+    <None Include="CustomerSide\less\normalize.less" />
+    <None Include="CustomerSide\less\stuck-menu.less" />
+    <None Include="CustomerSide\less\style.less" />
+    <None Include="CustomerSide\less\superfish-menu.less" />
+    <None Include="CustomerSide\less\ui.totop.less" />
+    <None Include="CustomerSide\less\variables.less" />
+    <Content Include="CustomerSide\OnlineBanking_Customer.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53273</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

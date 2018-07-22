@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnlineBanking_Customer.master.cs" Inherits="OnlineBankingWebApplication.CustomerSide.OnlineBanking_Customer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Banking</title>
+    <meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700i|Playball" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='js/camera.js'></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+	    $(document).ready(function () {
+	        if ($('html').hasClass('desktop')) {
+	            new WOW().init();
+	        }
+	    });
+	</script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <body class="index">
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="Home.aspx">NBI</a><span>National Bank of India</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="Home.aspx">Home</a>
+								<ul>
+									<li><a href="CustomerRegistration.aspx">Register</a></li>
+									<li><a href="CustomerLogin.aspx">Login</a>
+										<ul>
+											<li><a href="ChangePassword.aspx">Change Password</a></li>
+											<li><a href="CustomerLogin.aspx">View Transaction</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+                            <li><a href="index-2.html">News</a></li>
+                            <li><a href="index-3.html">Services</a></li>
+                            <li><a href="index-1.html">About</a></li>
+							<li><a href="index-4.html">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<h2><span>Follow Us</span></h2>
+				<a href="#" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>
+				<pre>© <span id="copyright-year"></span> |  Privacy Policy</pre>
+				
+			</div>
+		</div>
+	</div>
+	
+</footer>
+<script>
+	jQuery(function(){
+		jQuery('#camera_wrap').camera({
+			height: '34.58333333333333%',
+			thumbnails: false,
+			pagination: true,
+			fx: 'simpleFade',
+			loader: 'none',
+			hover: false,
+			navigation: false,
+			playPause: false,
+			minHeight: "139px",
+		});
+	});
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            navigation: true,
+            pagination: false,
+            items: 3,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 3],
+            itemsTablet: [750, 1],
+            itemsMobile: [479, 1],
+            navigationText: false
+        });
+    });
+</script>
+<script>
+	$(document).ready(function() { 
+			if ($('html').hasClass('desktop')) {
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 20,
+					resposive: true,
+					hideDistantElements: true,
+				});
+			}
+		});
+</script>                           
+
+    </form>
+</body>
+</html>

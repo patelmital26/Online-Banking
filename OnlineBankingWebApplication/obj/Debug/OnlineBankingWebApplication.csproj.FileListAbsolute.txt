@@ -1,0 +1,10 @@
+C:\Users\Mittal\Desktop\OnlineBankingWebApplication\OnlineBankingWebApplication\bin\OnlineBankingWebApplication.dll
+C:\Users\Mittal\Desktop\OnlineBankingWebApplication\OnlineBankingWebApplication\bin\OnlineBankingWebApplication.pdb
+C:\Users\Mittal\Desktop\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.dll
+C:\Users\Mittal\Desktop\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.pdb
+C:\Users\Mittal\Desktop\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.csprojResolveAssemblyReference.cache
+E:\Projec-ITC\OnlineBankingWebApplication\OnlineBankingWebApplication\bin\OnlineBankingWebApplication.dll
+E:\Projec-ITC\OnlineBankingWebApplication\OnlineBankingWebApplication\bin\OnlineBankingWebApplication.pdb
+E:\Projec-ITC\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.csprojResolveAssemblyReference.cache
+E:\Projec-ITC\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.dll
+E:\Projec-ITC\OnlineBankingWebApplication\OnlineBankingWebApplication\obj\Debug\OnlineBankingWebApplication.pdb

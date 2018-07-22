@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Services</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index-3">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="Home.aspx">NBI</a><span>National Bank of India</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="Home.aspx">Home</a>
+								<ul>
+									<li><a href="CustomerRegistration.aspx">Register</a></li>
+									<li><a href="CustomerLogin.aspx">Login</a>
+										<ul>
+											<li><a href="#">Reset Password</a></li>
+											<li><a href="#">View Transaction</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+                            <li><a href="index-3.html">Services</a></li>
+                            <li><a href="index-1.html">About</a></li>
+							<li><a href="index-4.html">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=======content================================-->
+
+<section id="content">
+	<div class="full-width-container block-1">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<header>
+						<h3><span><u>Our Services</u></span></h3>
+					</header>
+				</div>
+			</div>
+              <br /><br /><br />
+			<div class="row">
+				<div class="grid_12">
+				    <div class="grid_3">
+                     <i class="fa fa-clock-o" style="font-size:48px;color:lightblue;"></i>
+					    <h5>24/7 Online Access</h5>
+				    </div>
+                    <div class="grid_3">
+                    <i class="fa fa-lock" style="font-size:48px;color:red"></i>
+					    <h5>Safe and Secure</h5>
+				    </div>
+                  <div class="grid_3">
+                      <i class="fa fa-gift" style="font-size:48px;color:purple;"></i>
+					    <h5>First Time Sign Up Bonus</h5>
+				    </div>
+                    <div class="grid_3">
+                    <i class="fa fa-file-text-o" style="font-size:48px;color:gold;"></i>
+					    <h5>View Accounts Balance </h5>
+				    </div>
+                    <div class="grid_3">
+                     <i class="fa fa-laptop" style="font-size:48px;color:maroon;"></i>
+					    <h5>View Recent Transactions </h5>
+				    </div>
+                    <div class="grid_3">
+                     <i class="fa fa-money" style="font-size:48px;color:green;"></i>
+					    <h5>Transfer Money</h5>
+				    </div>
+                </div>
+                <br />
+                <div class="grid_12">
+                    <div class="grid_3">
+                     <i class="fa fa-comment-o" style="font-size:48px;color:blue;"></i>
+					    <h5>Report Complaints</h5>
+				    </div>
+                    <div class="grid_3">
+                     <i class="fa fa-user" style="font-size:48px;color:black;"></i>
+					    <h5>Update Customer Profile </h5>
+				    </div>
+                    <div class="grid_3">
+                     <i class="fa fa-key" style="font-size:48px;color:gray;"></i>
+					    <h5>Change Password </h5>
+				    </div>
+               </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<h2><span>Follow Us</span></h2>
+                <a href="https://www.facebook.com/" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="https://twitter.com/signup" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="https://plus.google.com" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>
+			    <pre>National Bank of India © <span id="copyright-year"></span>Copyright |  Privacy Policy</pre>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
